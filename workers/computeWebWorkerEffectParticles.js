@@ -1,11 +1,11 @@
 import { Point } from "./Point.js";
 
 self.onmessage = function (event) {
-  self.postMessage(computeWebWorkerEffectTiles(event.data));
+  self.postMessage(computeWebWorkerEffectParticles(event.data));
 };
 
 // 함수 변환
-function computeWebWorkerEffectTiles(payload) {
+function computeWebWorkerEffectParticles(payload) {
   // Float32Array로 가정
   let hoverDistance = payload[0];
   let stiffness = payload[1];
