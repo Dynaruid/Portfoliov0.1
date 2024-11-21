@@ -30,30 +30,20 @@ _flutter.loader.load({
       if (engineLoadComplete) {
         loadingIndicator.classList.add("hidden");
         setTimeout(() => {
-          //console.log("js print: app loaded indicator remove!");
+          appRunner.runApp();
           document.body.removeChild(loadingContainer);
         }, 800);
-        appRunner.runApp();
       }
-      //      else {
-      //        console.log("js print: timer is complete but engine not complete!");
-      //      }
     }, 1800);
     const appRunner = await engineInitializer.initializeEngine();
     engineLoadComplete = true;
 
     if (timerComplete) {
-      await appRunner.runApp();
-
       loadingIndicator.classList.add("hidden");
       setTimeout(() => {
-        // console.log("js print: app loaded indicator remove!");
+        appRunner.runApp();
         document.body.removeChild(loadingContainer);
       }, 800);
-      appRunner.runApp();
     }
-    //     else {
-    //      console.log("js print: engine is complete but timer not complete!");
-    //    }
   },
 });
