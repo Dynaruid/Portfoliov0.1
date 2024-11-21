@@ -38,7 +38,7 @@ _flutter.loader.load({
 //      else {
 //        console.log("js print: timer is complete but engine not complete!");
 //      }
-    }, 1000);
+    }, 1200);
     const appRunner = await engineInitializer.initializeEngine();
     engineLoadComplete = true;
 
