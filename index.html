@@ -27,8 +27,8 @@
 
     /* 로더 스타일 */
     .documentLoader {
-      width: 150px;
-      height: 150px;
+      width: min(40vw, 40vh);
+      height: min(40vw, 40vh);
       border-radius: 50%;
       background: solid #000000;
       position: relative;
@@ -41,12 +41,11 @@
       height: 100%;
       border-radius: 100%;
       box-shadow:
-        0 6px 5px 5px #000000 inset,
-        0 -1px 4px #ffffff80 inset,
-        0 -2px 5px#ffffffbb inset,
+        0 7px 5px 15px #000000 inset,
+        0 -2px 4px -5px #ffffff80 inset,
+        0 -3px 5px -5px #ffffffbb inset,
         0 2px #ffffff, 0 4px 2px #ffffff,
         0 5px 2px #ffffff90, 0 10px 5px #ffffff60;
-
       animation: rotate 2s linear infinite;
     }
 
@@ -69,7 +68,7 @@
       align-items: center;
       z-index: 9999;
       opacity: 1;
-      transition: opacity 800ms ease-in-out;
+      transition: opacity 800ms ease-out;
       /* 페이드아웃 트랜지션 */
     }
 
