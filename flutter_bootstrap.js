@@ -12,14 +12,14 @@ _flutter.buildConfig = {"engineRevision":"a18df97ca57a249df5d8d68cd0820600223ce2
 
 
 // 로딩 인디케이터 동적으로 생성
+const loadingContainer = document.createElement("div");
+loadingContainer.className = "loading-container";
+
 const loadingIndicator = document.createElement("div");
 loadingIndicator.className = "loading-indicator";
 
-const documentLoader = document.createElement("div");
-documentLoader.className = "documentLoader";
-
-loadingIndicator.appendChild(documentLoader);
-document.body.appendChild(loadingIndicator);
+loadingContainer.appendChild(loadingIndicator);
+document.body.appendChild(loadingContainer);
 
 _flutter.loader.load({
   onEntrypointLoaded: async function (engineInitializer) {
@@ -31,7 +31,7 @@ _flutter.loader.load({
         loadingIndicator.classList.add("hidden");
         setTimeout(() => {
           //console.log("js print: app loaded indicator remove!");
-          document.body.removeChild(loadingIndicator);
+          document.body.removeChild(loadingContainer);
         }, 800);
         appRunner.runApp();
       }
@@ -48,7 +48,7 @@ _flutter.loader.load({
       loadingIndicator.classList.add("hidden");
       setTimeout(() => {
         // console.log("js print: app loaded indicator remove!");
-        document.body.removeChild(loadingIndicator);
+        document.body.removeChild(loadingContainer);
       }, 800);
       appRunner.runApp();
     }
