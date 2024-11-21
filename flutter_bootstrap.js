@@ -33,12 +33,12 @@ _flutter.loader.load({
           //console.log("js print: app loaded indicator remove!");
           document.body.removeChild(loadingIndicator);
           appRunner.runApp();
-        }, 900);
+        }, 800);
       }
       //      else {
       //        console.log("js print: timer is complete but engine not complete!");
       //      }
-    }, 1200);
+    }, 2000);
     const appRunner = await engineInitializer.initializeEngine();
     engineLoadComplete = true;
 
