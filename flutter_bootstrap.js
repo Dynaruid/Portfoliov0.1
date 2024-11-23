@@ -37,7 +37,6 @@ _flutter.loader.load({
     }, 1800);
     const appRunner = await engineInitializer.initializeEngine();
     engineLoadComplete = true;
-
     if (timerComplete) {
       loadingIndicator.classList.add("hidden");
       setTimeout(() => {
