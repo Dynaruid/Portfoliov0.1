@@ -34,7 +34,7 @@ _flutter.loader.load({
           document.body.removeChild(loadingContainer);
         }, 800);
       }
-    }, 1800);
+    }, 1400);
     const appRunner = await engineInitializer.initializeEngine();
     engineLoadComplete = true;
     if (timerComplete) {
