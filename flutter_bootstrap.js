@@ -21,6 +21,30 @@ loadingIndicator.className = "loading-indicator";
 loadingContainer.appendChild(loadingIndicator);
 document.body.appendChild(loadingContainer);
 
+const initImagePaths = [
+  "assets/images/backgrounds/63.webp",
+  "assets/images/backgrounds/83.webp",
+  "assets/images/backgrounds/36.webp",
+  "assets/images/backgrounds/46_1.webp",
+  "assets/images/backgrounds/half_63.webp",
+  "assets/images/backgrounds/half_83.webp",
+  "assets/images/backgrounds/half_36.webp",
+  "assets/images/backgrounds/half_46_1.webp",
+  "assets/images/stacks/navi_compass_white.webp",
+  "assets/images/stacks/navi_compass.webp",
+];
+
+// 이미지 미리 로드 함수
+function preloadImages(imageArray) {
+  imageArray.forEach((imageSrc) => {
+    const img = new Image();
+    img.src = imageSrc;
+  });
+}
+
+// 이미지 미리 로드 실행
+preloadImages(initImagePaths);
+
 _flutter.loader.load({
   onEntrypointLoaded: async function (engineInitializer) {
     let timerComplete = false;
