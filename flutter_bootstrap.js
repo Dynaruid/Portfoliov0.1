@@ -32,8 +32,17 @@ const initImagePaths = [
   "assets/assets/images/backgrounds/half_46_1.webp",
   "assets/assets/images/stacks/navi_compass_white.webp",
   "assets/assets/images/stacks/navi_compass.webp",
+  "assets/assets/images/stacks/cplusplus-original.webp",
+  "assets/assets/images/stacks/csharp-original.webp",
+  "assets/assets/images/stacks/dart-original.webp",
+  "assets/assets/images/stacks/java-original.webp",
+  "assets/assets/images/stacks/javascript-original.webp",
+  "assets/assets/images/stacks/kotlin-original.webp",
+  "assets/assets/images/stacks/objectivec-plain.webp",
+  "assets/assets/images/stacks/python-original.webp",
+  "assets/assets/images/stacks/swift-original.webp",
+  "assets/assets/images/stacks/typescript-original.webp",
 ];
-
 // 이미지 미리 로드 함수
 function preloadImages(imageArray) {
   imageArray.forEach((imageSrc) => {
@@ -41,9 +50,6 @@ function preloadImages(imageArray) {
     img.src = imageSrc;
   });
 }
-
-// 이미지 미리 로드 실행
-preloadImages(initImagePaths);
 
 _flutter.loader.load({
   onEntrypointLoaded: async function (engineInitializer) {
@@ -58,7 +64,9 @@ _flutter.loader.load({
           document.body.removeChild(loadingContainer);
         }, 800);
       }
-    }, 1400);
+    }, 1200);
+    // 이미지 미리 로드 실행
+    preloadImages(initImagePaths);
     const appRunner = await engineInitializer.initializeEngine();
     engineLoadComplete = true;
     if (timerComplete) {
