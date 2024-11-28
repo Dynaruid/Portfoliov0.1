@@ -2,94 +2,95 @@
 <html>
 
 <head>
-    <base href="/Portfoliov0.1/">
+  <base href="/Portfoliov0.1/">
 
-    <meta charset="UTF-8">
-    <meta content="IE=Edge" http-equiv="X-UA-Compatible">
-    <meta name="description" content="portfolio">
-    <meta name="theme-color" content="#222222">
+  <meta charset="UTF-8">
+  <meta content="IE=Edge" http-equiv="X-UA-Compatible">
+  <meta name="description" content="portfolio">
+  <meta name="theme-color" content="#222222">
 
-    <!-- iOS meta tags & icons -->
-    <meta name="apple-mobile-web-app-capable" content="yes">
-    <meta name="apple-mobile-web-app-status-bar-style" content="black">
-    <meta name="apple-mobile-web-app-title" content="elegant_v2">
-    <link rel="apple-touch-icon" href="icons/Icon-192.png">
+  <!-- iOS meta tags & icons -->
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="apple-mobile-web-app-title" content="elegant_v2">
+  <link rel="apple-touch-icon" href="icons/Icon-192.png">
 
-    <!-- Favicon -->
-    <link rel="icon" type="image/png" href="favicon.png"/>
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="favicon.png" />
 
-    <title>포트폴리오</title>
-    <link rel="manifest" href="manifest.json">
-    <style>
-        body {
-          background-color: black;
-        }
+  <title>포트폴리오</title>
+  <link rel="manifest" href="manifest.json">
+  <style>
+    body {
+      background-color: black;
+    }
 
-        /* 로더 스타일 */
-        .loading-indicator {
-          width: min(40vw, 40vh);
-          height: min(40vw, 40vh);
-          border-radius: 50%;
-          background: solid #000000;
-          position: relative;
-        }
+    /* 로더 스타일 */
+    .loading-indicator {
+      width: min(40vw, 40vh);
+      height: min(40vw, 40vh);
+      border-radius: 50%;
+      background: solid #000000;
+      position: relative;
+    }
 
-        .loading-indicator:before {
-          position: absolute;
-          content: "";
-          width: 100%;
-          height: 100%;
-          border-radius: 100%;
-          box-shadow:
-            0 7px 5px 15px #000000 inset,
-            0 -2px 4px -5px #ffffff80 inset,
-            0 -3px 5px -5px #ffffffbb inset,
-            0 2px #ffffff, 0 4px 2px #ffffff,
-            0 5px 2px #ffffff90, 0 10px 5px #ffffff60;
-          animation: rotate 2s linear infinite;
-          opacity: 1;
-          /* 기본 투명도 */
-          transition: opacity 800ms ease-out;
-          /* 트랜지션 추가 */
-        }
+    .loading-indicator:before {
+      position: absolute;
+      content: "";
+      width: 100%;
+      height: 100%;
+      border-radius: 100%;
+      box-shadow:
+        0 7px 5px 15px #000000 inset,
+        0 -2px 4px -5px #ffffff80 inset,
+        0 -3px 5px -5px #ffffffbb inset,
+        0 2px #ffffff, 0 4px 2px #ffffff,
+        0 5px 2px #ffffff90, 0 10px 5px #ffffff60;
+      animation: rotate 2s linear infinite;
+      opacity: 1;
+      /* 기본 투명도 */
+      transition: opacity 800ms ease-out;
+      /* 트랜지션 추가 */
+    }
 
-        .loading-indicator.hidden:before {
-          opacity: 0;
-          /* 숨김 상태로 변경 */
-        }
+    .loading-indicator.hidden:before {
+      opacity: 0;
+      /* 숨김 상태로 변경 */
+    }
 
-        @keyframes rotate {
-          100% {
-            transform: rotate(360deg);
-          }
-        }
+    @keyframes rotate {
+      100% {
+        transform: rotate(360deg);
+      }
+    }
 
-        /* 로더 컨테이너 */
-        .loading-container {
-          position: fixed;
-          top: 0;
-          left: 0;
-          width: 100%;
-          height: 100%;
-          background-color: rgba(0, 0, 0, 0);
-          display: flex;
-          justify-content: center;
-          align-items: center;
-          z-index: 99;
-        }
-    </style>
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-0C9F03G9YB"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
+    /* 로더 컨테이너 */
+    .loading-container {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      z-index: 99;
+    }
+  </style>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-0C9F03G9YB"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
 
-        gtag('config', 'G-0C9F03G9YB');
-    </script>
+    gtag('config', 'G-0C9F03G9YB');
+  </script>
+  <link rel="preload" href="main.dart.js" as="script">
 </head>
 
 <body>
-<script src="flutter_bootstrap.js" async></script>
+  <script src="flutter_bootstrap.js" async></script>
 </body>
 
 </html>
