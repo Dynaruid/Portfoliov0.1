@@ -42123,7 +42123,7 @@ T(){return new A.Ze(new A.aT(null,t.B),B.e2)}}
 A.Ze.prototype={
 ab(){var s,r=this
 r.an()
-A.pO("buildTime 120211")
+A.pO("buildTime 120913")
 s=A.aVr(6,0.34)
 r.z!==$&&A.a_()
 r.z=s
@@ -46868,7 +46868,8 @@ d=-b7
 c=r*4
 b6=b2.a
 if(h===4){d*=1.9
-b=Math.min(b6.e*0.035,p)}else{a=Math.max(b6.e*0.1,q*3)
+b=Math.min(b6.e*0.035,p)}else{r=b6.e
+a=q*3*(Math.min(1.25,r/b6.c)*Math.min(1,r/900))
 b=c
 c=a}a0=B.nI
 a1=B.b2}else{d=b6.e
