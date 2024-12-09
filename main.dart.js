@@ -41948,7 +41948,7 @@ V(){return new A.YZ(new A.aT(null,t.B),B.e2)}}
 A.YZ.prototype={
 ab(){var s,r=this
 r.ao()
-A.pG("buildTime 120920")
+A.pG("buildTime 120920a")
 s=A.aUD(6,0.34)
 r.z!==$&&A.a_()
 r.z=s
@@ -90862,7 +90862,7 @@ r=B.b.gbE(r.f).Q
 r.toString
 r=Math.min(s,r)
 p.f=r
-q=A.P(0,Math.max(80,B.c.O(Math.abs(a)/120*200)))
+q=A.P(0,Math.max(150,B.c.O(Math.abs(a)/90*200)))
 s=p.b
 s===$&&A.a()
 s.bB(r,B.Hm,q)}else{s=p.id
