@@ -42,6 +42,16 @@ const initImagePaths = [
   "assets/assets/images/stacks/python-original.webp",
   "assets/assets/images/stacks/swift-original.webp",
   "assets/assets/images/stacks/typescript-original.webp",
+  "assets/assets/images/stacks/blur_cplusplus-original.webp",
+  "assets/assets/images/stacks/blur_csharp-original.webp",
+  "assets/assets/images/stacks/blur_dart-original.webp",
+  "assets/assets/images/stacks/blur_java-original.webp",
+  "assets/assets/images/stacks/blur_javascript-original.webp",
+  "assets/assets/images/stacks/blur_kotlin-original.webp",
+  "assets/assets/images/stacks/blur_objectivec-plain.webp",
+  "assets/assets/images/stacks/blur_python-original.webp",
+  "assets/assets/images/stacks/blur_swift-original.webp",
+  "assets/assets/images/stacks/blur_typescript-original.webp",
 ];
 // 이미지 미리 로드 함수
 function preloadImages(imageArray) {

@@ -41970,7 +41970,7 @@ V(){return new A.YY(new A.aT(null,t.B),B.e2)}}
 A.YY.prototype={
 ac(){var s,r=this
 r.ao()
-A.pG("buildTime 121721")
+A.pG("buildTime 121722")
 s=A.aUK(6,0.34)
 r.z!==$&&A.Z()
 r.z=s
@@ -42201,7 +42201,7 @@ m=Math.min(b,550)
 l=b-10
 k=Math.max(Math.min(b,600)*0.7,270)}else{d.c=!1
 n=d.b=Math.min(b/30,45)
-m=Math.min(b/2,600)
+m=Math.min(b/2,700)
 d.a=0
 l=Math.min(b/1.8,700)
 k=Math.max(l*0.7,270)}j=A.bm(g,g,B.ds,g,g,g,g,g,"SUITE-Bold",g,g,n,g,g,g,g,g,!0,g,g,g,g,g,g,g,g)
@@ -97194,7 +97194,7 @@ B.mo=new A.a7(0,1/0,10,1/0)
 B.CA=new A.a7(0,1/0,20,1/0)
 B.Cz=new A.a7(36,1/0,36,1/0)
 B.mq=new A.a7(0,640,0,1/0)
-B.CB=new A.a7(0,1300,0,1/0)
+B.CB=new A.a7(0,1400,0,1/0)
 B.fI=new A.a7(1/0,1/0,1/0,1/0)
 B.J=new A.m(2315255808)
 B.OE=new A.f(0,10)
