@@ -42364,7 +42364,7 @@ A.auQ.prototype={
 $1(a){var s,r=this.a
 if(r.c!=null){s=r.a.e
 r.aa(new A.auO(r))
-A.bQ(B.M,new A.auP(r,s*0.25),t.P)}},
+A.bQ(B.M,new A.auP(r,s*0.24),t.P)}},
 $S:1}
 A.auO.prototype={
 $0(){this.a.x=!1},
