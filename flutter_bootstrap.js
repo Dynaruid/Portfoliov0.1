@@ -72,7 +72,7 @@ _flutter.loader.load({
         setTimeout(() => {
           appRunner.runApp();
           document.body.removeChild(loadingContainer);
-        }, 800);
+        }, 500);
       }
     }, 1200);
     // 이미지 미리 로드 실행
@@ -84,7 +84,7 @@ _flutter.loader.load({
       setTimeout(() => {
         appRunner.runApp();
         document.body.removeChild(loadingContainer);
-      }, 800);
+      }, 500);
     }
   },
 });
